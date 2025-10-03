@@ -172,7 +172,8 @@ class Fluttershy {
     }
 
     addEvent() {
-        document.addEventListener('keydown', this.videoContenaireKeydown)
+        this.playerContenaire.addEventListener('keydown', this.videoContenaireKeydown)
+        
         window.addEventListener('resize', this.updatePlayerSize)
 
         this.player.addEventListener('timeupdate', this.videoElementTimeUpdate)
